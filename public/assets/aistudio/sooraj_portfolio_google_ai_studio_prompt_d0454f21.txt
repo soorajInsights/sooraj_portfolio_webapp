@@ -1,0 +1,376 @@
+GOOGLE AI STUDIO — PORTFOLIO WEBSITE BUILD PROMPT
+Owner: Sooraj KK
+Purpose: Build a polished, responsive, easy-to-maintain personal portfolio website
+
+============================================================
+1. YOUR ROLE AND MAIN GOAL
+============================================================
+Act as a senior full-stack developer, UI/UX designer, and accessibility-minded frontend engineer. Build a complete, working personal portfolio website for me in Google AI Studio. Do not only provide a plan, wireframe, or sample code: implement the website and make its navigation, links, interactions, and content work.
+
+I will provide these reference assets directly in Google AI Studio along with this prompt:
+1. My current resume as a PDF. Treat it as the source of truth for my name, contact details, work experience, projects, skills, education, certificates, and URLs.
+2. My profile photo. Use this exact photo as my portrait. Do not generate a replacement person, change my identity, beautify my face, or apply a dramatic filter.
+3. A screenshot of a portfolio website whose UI and colour combination I like. Use it as visual inspiration for the colour palette, gradient accents, rounded cards, dark background, layout, and polished developer-portfolio feel. Do not copy its person's name, text, or unrelated content.
+
+The result should feel professional, classic, clean, confident, and suitable for job applications for Data Analyst, Data Engineer, and ETL Developer roles, while also showing my GenAI/agentic-AI project work. It should not look like a generic MERN-stack developer template.
+
+============================================================
+2. RESUME ACCURACY AND CONTENT RULES
+============================================================
+- Read and use the complete uploaded resume PDF before generating the website content.
+- Use my resume as the authoritative source. Preserve the meaning of my experience and project claims.
+- Do not invent employers, projects, clients, technologies, qualifications, certificates, statistics, reviews, testimonials, achievements, dates, GitHub repositories, live demos, or certificate URLs.
+- Do not describe exploratory or experimental LLM work as a production feature. Use wording such as “explored LLM integration” where that is what the resume says.
+- Keep the text professional and concise for a portfolio, but do not change the facts.
+- If any data cannot be confirmed from the uploaded resume, leave it out or mark it clearly as an item for me to fill in. Never invent a value to complete a card.
+- Use the real project repository and certificate URLs found in the resume. For the production projects without a repository URL, do not show a broken or fabricated GitHub button. Show a repository/demo button only when a real URL exists.
+- Ensure all external links open safely in a new tab using appropriate rel attributes.
+
+My core profile information in the resume is:
+- Name: Sooraj KK
+- Current professional positioning: Data Analyst | Data Engineer | ETL Developer
+- Location: Calicut, Kerala, India
+- Email: soorajkknmd@gmail.com
+- Phone: 8111822012
+- LinkedIn: https://www.linkedin.com/in/sooraj-kk-5073a3270/
+- GitHub profile: https://github.com/soorajInsights
+- Experience summary: 2+ years in web scraping, ETL pipeline development, large-scale data processing, and analytics.
+
+Use this professional summary, or a faithful polished version of it:
+“Data Analyst and Data Engineer with 2+ years of experience in web scraping, ETL pipeline development, large-scale data processing, and analytics. Experienced in building data-driven solutions using Python, SQL, PySpark, PostgreSQL, AWS, and Apache Airflow. Additionally, developing expertise in GenAI application development through LLM integration, tool-calling workflows, and agentic AI projects.”
+
+============================================================
+3. DESIGN DIRECTION — FOLLOW THE REFERENCE IMAGE
+============================================================
+Create an elegant dark-theme design inspired by the reference screenshot.
+
+Colour palette:
+- Main background: deep navy, approximately #101A33 or #111B34.
+- Main content/card background: slightly lighter navy, approximately #152442.
+- Alternate section background: subtle navy-to-deep-plum gradient, approximately #17233F to #2A1C38.
+- Primary accent: bright blue, approximately #2196F3.
+- Secondary accent: coral/red-pink, approximately #F0445B.
+- Main action gradient: blue-to-coral/red-pink.
+- Main text: soft white, approximately #F5F7FC.
+- Secondary text: muted light grey-blue, approximately #B8C3D9.
+- Borders: thin blue/pink gradient or restrained blue-purple outlines.
+
+Visual style:
+- Use a classic, polished developer portfolio layout with generous spacing and a clear visual hierarchy.
+- Use a clean sans-serif typeface such as Inter, Manrope, or a similar readable font.
+- Use medium rounded corners, restrained shadows, subtle gradient outlines, and a soft glow only for important accents.
+- Use blue-to-pink gradient text selectively for my name, role highlights, and primary buttons. Do not apply gradients to every element.
+- Use simple, consistent line icons where helpful. Avoid excessive decoration and unnecessary animation.
+- Use alternating dark section surfaces to separate sections while keeping the page visually cohesive.
+- The reference uses cards and a dark navy/plum palette. Adapt that look to a data engineering portfolio, not to a front-end-only developer profile.
+- Do not add fake client testimonials, star ratings, or invented social proof. These are not required.
+
+Layout:
+- Build a single-page portfolio with a sticky top navigation bar and clearly separated scroll sections.
+- The site must look excellent on desktop and also work well on tablets and mobile phones.
+- Desktop hero: text/content on the left and my profile photo on the right.
+- Use the supplied profile photo as the real portrait. A rounded rectangle or circular crop is fine if it does not cut off my head or face. Keep the photo natural and recognisable.
+- For mobile, stack the hero vertically and place the portrait where it looks balanced. Avoid horizontal overflow or clipped text.
+- Add a subtle active state for the current navigation section and smooth scrolling where appropriate.
+
+============================================================
+4. TOP NAVIGATION AND PAGE SECTIONS
+============================================================
+The top navigation must include these sections, in this order:
+Home | About | Skills | Experience | Projects | Education | Certificates
+
+Also provide an obvious Contact action, such as a button on the right side of the navigation or a Contact section near the bottom. On small screens, use an accessible mobile menu.
+
+Implement these sections:
+1. Home / Hero
+2. About
+3. Skills & Technologies
+4. Professional Experience
+5. Projects
+6. Education
+7. Certificates
+8. Contact / Footer
+
+Every navigation item must point to a real section ID. Make sure the mobile menu closes after a section is selected.
+
+============================================================
+5. HOME / HERO SECTION
+============================================================
+Show a strong first impression with:
+- Small eyebrow label, such as “DATA ANALYST · DATA ENGINEER · ETL DEVELOPER”.
+- Heading: “Hi, I’m Sooraj KK” with the name highlighted using a restrained blue-to-coral gradient.
+- A concise supporting line reflecting my data engineering, analytics, ETL, and GenAI project interests.
+- A short intro based on my professional summary, not a generic claim.
+- Primary button: “Explore Projects” that scrolls to Projects.
+- Secondary button: “Download Resume” that downloads the actual uploaded resume PDF.
+- Optional compact text link: “Contact Me”.
+- My supplied profile photo on the right, with a professional crop and subtle background treatment.
+- Small social/contact icons for GitHub, LinkedIn, and email, connected to the correct URLs.
+
+Do not put a made-up job title, company, award, metric, or testimonial in the hero.
+
+============================================================
+6. ABOUT SECTION
+============================================================
+Create an About section that explains my professional focus using information from the resume. Emphasise:
+- Web scraping and data extraction.
+- ETL and batch data processing.
+- Data cleaning, transformation, validation, and quality checks.
+- SQL/database work and downstream analytics.
+- Python, PySpark, PostgreSQL, AWS, and Apache Airflow.
+- My developing work with GenAI, LLM integration, tool calling, and agentic workflows.
+
+Keep it readable. Use one or two short paragraphs and, if useful, a few concise highlights supported by the resume. Avoid a large wall of text.
+
+============================================================
+7. SKILLS & TECHNOLOGIES SECTION
+============================================================
+Display my skills in grouped, responsive cards or tidy lists. Keep the categories and technology names editable. Use these categories and skills from my resume:
+
+Programming:
+- Python
+- SQL
+
+Analytics & BI:
+- Microsoft Power BI
+- Exploratory Data Analysis (EDA)
+
+Data Engineering:
+- Scrapy
+- PySpark
+- Apache Airflow
+- dbt
+
+Databases & Cloud:
+- PostgreSQL
+- MySQL
+- AWS S3
+- AWS EC2
+
+Backend Development:
+- Django REST Framework
+- FastAPI
+- REST APIs
+
+GenAI & Agentic AI:
+- LangChain
+- LangGraph
+- Ollama
+- LLM tool calling
+
+DevOps & Version Control:
+- Docker
+- Git
+- GitHub Actions
+
+Use simple technology labels or icons without inventing proficiency percentages or skill scores. Do not use progress bars with made-up percentages. The category order and skill entries must be easy to edit later.
+
+============================================================
+8. PROFESSIONAL EXPERIENCE SECTION
+============================================================
+Create a readable timeline or experience card.
+
+Role: Data Analyst
+Company: Orbio Solutions Pvt Ltd
+Dates: 07/2024 – Present
+Location: Calicut, India
+
+Use the following resume-supported responsibilities, polished for clarity but faithful to the source:
+- Developed and maintained data extraction workflows to collect and process product information from multiple external sources.
+- Transformed raw data into structured, standardised datasets through data cleaning, validation, and quality checks.
+- Automated recurring data-processing tasks and troubleshot scraping failures and pipeline issues to improve workflow reliability.
+- Supported database operations and backend development to improve data accessibility and application functionality.
+- Maintained data consistency across sources and resolved data-quality issues affecting downstream analytics.
+- Explored LLM-based product matching to connect natural-language product comparison requests with relevant records in scraped datasets.
+- Collaborated on system enhancements, debugging, and performance improvements to support reliable data processing.
+
+Use a clear date label and do not invent a promotion or additional role.
+
+============================================================
+9. PROJECTS SECTION
+============================================================
+Create project cards that are visually consistent and easy to scan. Each card should support a project name, context/client where stated, description, key features, technology tags, and optional external links. Use clear labels to distinguish production work from an independent project. Do not invent screenshots or demo URLs. If there are no supplied screenshots, use clean visual treatments or technology icons rather than fake product screenshots.
+
+PROJECT A — Ecomedes
+Context: Ecomedes, Orbio Solutions
+Type: Production project
+Summary: Developed scalable batch data pipelines to extract, process, validate, and deliver product data from 25+ external web sources, supporting downstream analytics, reporting, and business intelligence.
+Resume-supported details:
+- Processed 6–8 million records monthly using Scrapy, PySpark, SQL, and PostgreSQL.
+- Developed Scrapy spiders to extract product specifications, certifications, and metadata.
+- Implemented PySpark workflows for data cleaning, transformation, and validation, storing raw data in PostgreSQL.
+- Delivered processed datasets, product certifications, and images to client AWS S3 buckets for downstream analytics and reporting.
+- Orchestrated batch pipelines using Apache Airflow with monitoring and retry mechanisms.
+- Developed Power BI dashboards to analyse product trends, certification status, and key business metrics.
+Suggested technology tags: Scrapy, Python, PySpark, SQL, PostgreSQL, AWS S3, Apache Airflow, Power BI.
+Links: No project repository or live-demo URL is specified for this project in the resume. Do not invent one.
+
+PROJECT B — OttixHow: AI Retail Price Intelligence
+Context: Orbio Solutions
+Type: Production project
+Summary: Developed a retail price intelligence platform to collect competitor product data, track historical SKU-level pricing, and support cross-platform product comparison using web-scraped data and LLM-assisted product identification.
+Resume-supported details:
+- Developed REST APIs using Django REST Framework to support consumer and distributor dashboard functionality.
+- Built Scrapy spiders with proxy rotation and automated retry handling to collect product details and pricing data from multiple e-commerce platforms.
+- Designed PostgreSQL schemas for product information, multi-currency prices, and historical SKU-level pricing data for competitor analysis.
+- Explored LLM integration to interpret user product comparison requests and identify matching products in the scraped product database, helping map natural-language queries to relevant product records across platforms.
+- Containerised data-processing pipelines using Docker and integrated automated checks into GitHub Actions to support code quality and reliability.
+Suggested technology tags: Python, Scrapy, Django REST Framework, PostgreSQL, LLM Integration, Docker, GitHub Actions.
+Links: No project repository or live-demo URL is specified for this project in the resume. Do not invent one.
+
+PROJECT C — AI Trip Planner Agent
+Type: Independent technical project
+Summary: Developed an AI-powered travel planning assistant using LangGraph and a locally hosted Qwen3:4b model through Ollama. The application uses a tool-calling workflow to generate personalised travel itineraries and integrate external APIs for destination research, weather information, currency conversion, and expense estimation.
+Resume-supported details:
+- Built an agentic workflow using LangGraph and LangChain to orchestrate LLM responses and tool execution.
+- Integrated Google Places and Tavily Search for destination research, attractions, restaurants, activities, and transportation information.
+- Integrated OpenWeatherMap for weather information and ExchangeRate-API for currency conversion.
+- Implemented expense calculation tools for accommodation costs, total trip expenses, and daily budget estimation.
+- Developed a FastAPI REST API for processing travel-planning queries and returning generated responses.
+- Built a Streamlit frontend for interactive user input and Markdown-formatted itinerary display.
+- Configured a local LLM using Ollama (qwen3:4b) to support local inference without relying on a hosted LLM API.
+Technology tags: Python, LangGraph, LangChain, Ollama, Qwen3:4b, FastAPI, Streamlit, Google Places, Tavily Search, OpenWeatherMap, ExchangeRate-API.
+Repository button label: “View GitHub Repository”
+Repository URL from the resume: https://github.com/soorajInsights/trip_planner_agent.git
+
+Project UI requirements:
+- Clearly distinguish the independent project from production projects.
+- Place the AI Trip Planner Agent repository link prominently and test that it opens correctly.
+- Do not show “Live Demo” links unless I provide a real URL later.
+- Use an accessible card layout; one column on mobile and a balanced multi-column layout on larger screens.
+- Allow me to add, edit, remove, and reorder project cards later without rewriting the page layout.
+
+============================================================
+10. EDUCATION SECTION
+============================================================
+Qualification: B.Sc. in Botany
+Institution: Calicut University
+Dates: 07/2016 – 05/2019
+Location: Kerala, India
+
+Show this simply and professionally. Do not infer marks, grade, honours, or extra qualifications.
+
+============================================================
+11. CERTIFICATES SECTION — USE THE REAL LINKS
+============================================================
+Create certificate cards with the certificate name, issuing organisation, and a “View Certificate” or “Verify Certificate” button. All buttons must use the exact URLs below and open in a new tab.
+
+1. Data Science 101 (DS0101EN) — IBM SkillsBuild
+URL: https://courses.cognitiveclass.ai/certificates/ff9cc7c7549b47c2a34c5e521f645619
+
+2. Data Literacy — IBM SkillsBuild
+URL: https://www.credly.com/badges/19db0f1e-6b35-48c1-8a9e-efa9ffeacde5/public_url
+
+3. Ethics in AI and Data Science (LFS112) — The Linux Foundation
+URL: https://www.credly.com/badges/3ff7d8b9-3c61-4a33-a710-c14d7056dde8/linked_in_profile
+
+Do not create fake certificate images, dates, IDs, or issuers. If you choose to use a simple badge icon instead of a certificate image, that is preferred to a fake document image. Let me add future certificates and their links through the portfolio content editor.
+
+============================================================
+12. CONTACT SECTION AND FOOTER
+============================================================
+Create a professional contact section with:
+- Email: soorajkknmd@gmail.com, linked using mailto:soorajkknmd@gmail.com
+- Phone: 8111822012, linked using tel:8111822012
+- Location: Calicut, Kerala, India
+- LinkedIn: https://www.linkedin.com/in/sooraj-kk-5073a3270/
+- GitHub: https://github.com/soorajInsights
+
+Use a clear “Let’s Connect” or “Get in Touch” heading and a simple contact CTA.
+If you add a contact form, do not show a success message or claim an email was sent unless a real sending service is configured. If no backend is configured, either use an honest mailto-based form fallback or omit the form and provide a functional email button.
+
+Footer should include my name, a small portfolio description, key section links, GitHub/LinkedIn icons, and a dynamic current year. Do not use the sample screenshot’s person name or social profiles.
+
+============================================================
+13. RESUME DOWNLOAD — MUST WORK
+============================================================
+The uploaded resume PDF must be available to visitors through a clearly labelled “Download Resume” button in the hero section and, if appropriate, another link in About.
+- Use the exact uploaded resume PDF as the downloadable file; do not generate a substitute PDF containing only extracted text.
+- Place the file in a predictable public assets location such as `public/resume/Sooraj_KK_Resume.pdf` and point the download link to that file.
+- Use the HTML download attribute and a suitable filename such as `Sooraj_KK_Resume.pdf` where supported.
+- Test the link. It must not point to a missing file or a temporary local path.
+- If Google AI Studio does not automatically copy the attached PDF into the app’s public assets, create the correct asset folder and provide an explicit setup note telling me exactly where to copy the uploaded PDF. Do not claim the download is working until the file is present at that path.
+
+Use the uploaded profile image as the portrait asset. If the build environment does not automatically place it in the public assets directory, add a clear instruction to place it at a predictable path such as `public/images/sooraj-profile.jpg`. Make sure the website points to that path and provide a graceful fallback if the image is missing.
+
+============================================================
+14. EASY EDITING — IMPORTANT REQUIREMENT
+============================================================
+I want to maintain this portfolio myself later, without needing to redesign the site or search through many components to change text. Build the website around structured content data.
+
+A. Centralised content:
+- Keep the portfolio content in a clearly named, typed central data file, for example `src/data/portfolioData.ts`.
+- Put the name, role headline, summary, about text, contact details, social links, skills/categories, experience entries, project cards, education entries, certificate entries, navigation labels, and section copy in that file or in clearly documented data structures.
+- Do not hard-code the same text in several components.
+- Build reusable UI components that render from this structured data.
+- Add comments and a short README section explaining exactly how I can edit each content type and where to replace the profile photo and resume PDF.
+
+B. Editing content on the deployed website:
+I also want the option to edit my website content from a browser after deployment. If the environment supports it, implement a protected `/admin` page using Firebase Authentication and Cloud Firestore (and Firebase Storage for uploaded profile/resume files if practical). The public portfolio should read its published content from the same data store, so changes I save as an administrator can appear on the live site without manually editing source code and redeploying.
+
+Admin editor requirements:
+- The admin page must not appear in the public navigation.
+- Require sign-in before allowing edits. Only an authorised admin account can create, update, delete, or publish portfolio content.
+- Provide clear forms for editing the hero/about text, contact and social links, skills, work experience, projects, education, certificate names/URLs, profile image, and resume PDF.
+- Allow adding, editing, deleting, and reordering repeatable entries such as projects, skills, and certificates.
+- Validate URLs and required fields. Show useful save/error feedback and a preview of changes when practical.
+- Ensure updates are genuinely saved to the chosen backend and then read by the public page. Do not simulate a save using only a temporary toast or unsynchronised browser state.
+- Add database/security rules that prevent unauthenticated visitors from writing to public portfolio content or uploading files. Hiding the Admin link in the UI is not security.
+- Never place service-account credentials, private keys, or server secrets in browser code.
+- Keep Firebase client configuration in the appropriate environment/configuration file and provide an `.env.example` or exact setup steps. Document how I register the admin email and set the appropriate Firebase Authentication, Firestore, Storage, and security-rule configuration.
+- Use secure default rules: public visitors may read only the published portfolio data and published assets; only the designated admin account may write or upload.
+
+Important fallback rule: if Firebase cannot be fully configured automatically in Google AI Studio, do not pretend that online editing or cloud saving works. Still build the centralised data-file version, make the UI ready for Firebase integration without broken imports, and provide exact step-by-step setup instructions for enabling live online editing. Keep a working local/static portfolio available while backend setup is pending.
+
+============================================================
+15. TECHNICAL AND QUALITY REQUIREMENTS
+============================================================
+- Use the framework best supported by the Google AI Studio build environment; prefer React and TypeScript if available.
+- Use clean, maintainable component structure and shared design tokens/CSS variables for the colour palette, spacing, typography, borders, and buttons.
+- Use responsive CSS and semantic HTML. Do not rely on fixed widths that break on mobile.
+- Use accessible colour contrast, visible keyboard focus, descriptive image alt text, accessible button labels, and keyboard-friendly navigation.
+- Make external links safe and ensure all buttons perform their labelled action.
+- Add page title, meta description, and basic Open Graph metadata based on my real name and role.
+- Optimise the profile image and avoid unnecessarily large assets or heavy animations.
+- Prefer a small number of dependable libraries. Avoid unnecessary complexity.
+- Do not add fake loading spinners, broken charts, fake statistics, fake testimonials, or inactive controls.
+- Make sure all sections have consistent spacing and heading hierarchy.
+- Check for spelling errors, missing assets, broken navigation anchors, console errors, and layout overflow.
+- Keep animations subtle and respect reduced-motion preferences.
+
+============================================================
+16. EXPECTED PROJECT STRUCTURE / DELIVERABLES
+============================================================
+Organise the application in a clear structure similar to:
+- `src/components/` — reusable navbar, buttons, cards, section wrappers, footer, etc.
+- `src/sections/` — Hero, About, Skills, Experience, Projects, Education, Certificates, Contact.
+- `src/data/portfolioData.ts` — central editable portfolio content and exact links.
+- `src/styles/` or equivalent — central theme tokens and component styles.
+- `public/images/sooraj-profile.jpg` — my profile-photo asset, or the exact path documented for the provided photo.
+- `public/resume/Sooraj_KK_Resume.pdf` — the original uploaded PDF, or a clearly documented step to place it there.
+- `README.md` — run instructions, content-editing guide, asset locations, and optional Firebase setup/security instructions.
+- `.env.example` — only if environment variables are needed; no real secret values.
+- Firebase rules/configuration files if Firebase online editing is implemented.
+
+You may adjust the structure to fit the Google AI Studio environment, but retain the same separation of reusable components, central content data, assets, and documentation.
+
+============================================================
+17. FINAL ACCEPTANCE CHECKLIST
+============================================================
+Before you finish, check these items and fix any failures:
+[ ] The site uses the dark navy/blue-to-coral visual style inspired by my reference screenshot.
+[ ] The exact profile photo I upload is used without changing my identity.
+[ ] The top navigation contains Home, About, Skills, Experience, Projects, Education, and Certificates, plus a useful Contact action.
+[ ] The layout is responsive on desktop, tablet, and mobile.
+[ ] All portfolio facts match the uploaded resume; no invented credentials or project details.
+[ ] Ecomedes and OttixHow are included as production projects.
+[ ] AI Trip Planner Agent is included as an independent project and links to the real GitHub repository.
+[ ] All three certificates use the exact supplied verification URLs.
+[ ] GitHub and LinkedIn profile links work.
+[ ] The Download Resume button downloads the original uploaded PDF from a valid project asset path.
+[ ] Skills, project cards, experience, education, certificate entries, profile details, and links are easy to edit in one central content structure.
+[ ] If a browser-based admin editor is included, it is genuinely authenticated and persists changes; otherwise, the Firebase setup gap is documented honestly and the central-data version still works.
+[ ] No fake testimonials, invented ratings, fake repository links, or placeholder content remain visible in the finished public portfolio.
+[ ] There are no broken links, console errors, inaccessible controls, or obvious visual overflow.
+
+Build the actual website now. Once it is implemented, briefly tell me what is complete, which assets I still need to place manually (if any), how to edit portfolio content, and whether Firebase setup is required for browser-based online editing. Do not claim that any asset, link, download, or online editor works unless it has actually been implemented and checked.
