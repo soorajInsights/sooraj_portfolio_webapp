@@ -27,21 +27,6 @@ export const defaultPortfolioData: PortfolioData = {
       number: "2+ Years",
       label: "Industry Experience",
       description: "Hands-on data extraction, pipeline automation & analytics"
-    },
-    {
-      number: "6–8M",
-      label: "Monthly Records",
-      description: "Processed and transformed with PySpark and PostgreSQL"
-    },
-    {
-      number: "25+",
-      label: "Scraped Sources",
-      description: "Multi-platform automated spiders with monitoring & retry"
-    },
-    {
-      number: "100%",
-      label: "Faithful & Verified",
-      description: "Real production pipeline architecture & verified credentials"
     }
   ],
 

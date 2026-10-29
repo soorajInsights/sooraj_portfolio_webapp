@@ -51,7 +51,7 @@ export const Projects: React.FC = () => {
           }`}>
             <button
               onClick={() => setFilter('all')}
-              className={`px-4 py-2 rounded-xl text-xs font-medium transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                 filter === 'all'
                   ? 'bg-gradient-to-r from-[#2196F3] to-[#F0445B] text-white shadow-sm'
                   : isLight
@@ -59,11 +59,11 @@ export const Projects: React.FC = () => {
                     : 'text-slate-400 hover:text-white'
               }`}
             >
-              All Projects ({data.projects.length})
+              All Projects
             </button>
             <button
               onClick={() => setFilter('production')}
-              className={`px-4 py-2 rounded-xl text-xs font-medium transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                 filter === 'production'
                   ? 'bg-gradient-to-r from-[#2196F3] to-[#F0445B] text-white shadow-sm'
                   : isLight
@@ -71,11 +71,11 @@ export const Projects: React.FC = () => {
                     : 'text-slate-400 hover:text-white'
               }`}
             >
-              Production Pipelines ({data.projects.filter((p) => p.type === 'production').length})
+              Production Projects
             </button>
             <button
               onClick={() => setFilter('independent')}
-              className={`px-4 py-2 rounded-xl text-xs font-medium transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                 filter === 'independent'
                   ? 'bg-gradient-to-r from-[#2196F3] to-[#F0445B] text-white shadow-sm'
                   : isLight
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
                     : 'text-slate-400 hover:text-white'
               }`}
             >
-              Independent GenAI ({data.projects.filter((p) => p.type === 'independent').length})
+              Independent Projects
             </button>
           </div>
         </div>

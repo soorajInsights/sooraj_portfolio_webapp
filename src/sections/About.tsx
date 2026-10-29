@@ -70,40 +70,34 @@ export const About: React.FC = () => {
                 <FileText className="w-4 h-4 text-[#2196F3]" />
                 <span>Download Resume (PDF)</span>
               </a>
-              <a
-                href="#skills"
-                className="text-sm font-medium text-[#2196F3] hover:underline"
-              >
-                View Technical Skills &amp; Technologies →
-              </a>
             </FadeInItem>
           </div>
 
           {/* Key metrics / highlights from resume */}
-          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className={`lg:col-span-5 ${data.keyHighlights.length <= 2 ? 'flex flex-col justify-center' : 'grid grid-cols-1 sm:grid-cols-2 gap-4'}`}>
             {data.keyHighlights.map((item, index) => {
               const icons = [Workflow, BarChart3, Cpu, ShieldCheck];
               const Icon = icons[index % icons.length];
               return (
-                <FadeInItem key={index} delay={0.1 + index * 0.08}>
-                  <div className={`p-5 rounded-2xl border transition-all flex flex-col justify-between h-full ${
+                <FadeInItem key={index} delay={0.1 + index * 0.08} className="w-full">
+                  <div className={`p-6 sm:p-8 rounded-2xl border transition-all flex flex-col justify-between ${
                     isLight 
                       ? 'bg-white border-slate-200 hover:border-[#2196F3]/50 shadow-xs hover:shadow-md' 
-                      : 'bg-[#152442] border-slate-800/80 hover:border-[#2196F3]/40'
+                      : 'bg-[#152442] border-slate-800/80 hover:border-[#2196F3]/40 shadow-xl'
                   }`}>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-[#2196F3] to-[#F0445B] bg-clip-text text-transparent font-mono">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#2196F3] to-[#F0445B] bg-clip-text text-transparent font-mono">
                         {item.number}
                       </span>
-                      <div className={`p-2 rounded-lg ${
+                      <div className={`p-2.5 rounded-xl ${
                         isLight ? 'bg-blue-50 text-[#2196F3]' : 'bg-slate-800/80 text-[#2196F3]'
                       }`}>
-                        <Icon className="w-4 h-4" />
+                        <Icon className="w-5 h-5" />
                       </div>
                     </div>
                     <div>
-                      <h3 className={`text-sm font-semibold mb-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>{item.label}</h3>
-                      <p className={`text-xs leading-normal ${isLight ? 'text-slate-600' : 'text-slate-400'}`}>{item.description}</p>
+                      <h3 className={`text-base font-semibold mb-1.5 ${isLight ? 'text-slate-900' : 'text-white'}`}>{item.label}</h3>
+                      <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-slate-400'}`}>{item.description}</p>
                     </div>
                   </div>
                 </FadeInItem>

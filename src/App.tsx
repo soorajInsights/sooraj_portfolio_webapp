@@ -11,7 +11,6 @@ import { Education } from './sections/Education';
 import { Certificates } from './sections/Certificates';
 import { Contact } from './sections/Contact';
 import { Footer } from './components/Footer';
-import { AdminEditorModal } from './components/AdminEditorModal';
 import { ResumeModal } from './components/ResumeModal';
 import { CursorFollower } from './components/CursorFollower';
 
@@ -33,7 +32,6 @@ export default function App() {
             <Contact />
           </main>
           <Footer />
-          <AdminEditorModal />
           <ResumeModal />
         </div>
       </PortfolioProvider>
