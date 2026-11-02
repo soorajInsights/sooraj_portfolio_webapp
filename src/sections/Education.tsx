@@ -32,7 +32,7 @@ export const Education: React.FC = () => {
           <p className={`text-sm sm:text-base max-w-2xl mx-auto transition-colors ${
             isLight ? 'text-slate-600' : 'text-slate-400'
           }`}>
-            Foundational university degree fostering analytical methodology, research rigor, and scientific problem-solving.
+            Foundational university degree
           </p>
         </div>
 

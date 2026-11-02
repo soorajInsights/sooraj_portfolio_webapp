@@ -12,14 +12,16 @@ import { PortfolioData } from '../types/portfolio';
  */
 export const defaultPortfolioData: PortfolioData = {
   name: "Sooraj KK",
-  title: "Data Analyst | Data Engineer | ETL Developer",
-  eyebrow: "DATA ANALYST · DATA ENGINEER · ETL DEVELOPER",
-  tagline: "Building resilient data pipelines, scalable ETL workflows, and intelligent agentic AI systems.",
-  summary: "Data Analyst and Data Engineer with 2+ years of experience in web scraping, ETL pipeline development, large-scale data processing, and analytics. Experienced in building data-driven solutions using Python, SQL, PySpark, PostgreSQL, AWS, and Apache Airflow. Additionally, developing expertise in GenAI application development through LLM integration, tool-calling workflows, and agentic AI projects.",
+  title: "Data Analyst | Data Engineer | GENERATIVE AI",
+  eyebrow: "DATA ANALYST · DATA ENGINEER · GENERATIVE AI",
+  tagline: "Building scalable data pipelines, robust ETL workflows, and AI-powered data solutions.",
+  summary: "Data Professional with 2+ years of experience developing data extraction workflows, ETL pipelines, and data processing solutions using Python, SQL, Scrapy, PySpark, and PostgreSQL. Experienced in processing millions of records monthly, integrating data from multiple external sources, and delivering structured datasets for analytics and business intelligence. Hands-on experience with AWS, Docker, REST API development, and automated data workflows, complemented by independent project experience in Generative AI, LLM integration, tool calling, and agentic AI applications.",
   
   aboutParagraphs: [
-    "I am a Data Analyst and Data Engineer with 2+ years of experience specializing in web scraping, robust ETL pipeline development, and batch data processing. My daily work revolves around turning high-volume, unstructured web data into clean, validated, and analytics-ready datasets.",
-    "I work extensively across Python, PySpark, PostgreSQL, and AWS S3, orchestrating resilient workflows with Apache Airflow. Alongside core data engineering, I actively explore GenAI engineering—building agentic workflows with LangChain, LangGraph, and local LLMs using Ollama for intelligent tool calling and structured data retrieval."
+    "I'm a data professional with 2+ years of experience in data extraction, ETL development, and data processing, currently working as a Data Analyst while building expertise in Data Engineering.",
+    "I work primarily with Python, SQL, Scrapy, PySpark, and PostgreSQL to develop data workflows, automate processing tasks, and integrate data from multiple sources. My experience also includes AWS, Docker, backend API development, and delivering structured datasets for analytics.",
+    "Beyond data engineering, I'm interested in Generative AI and agentic systems, exploring how LLMs, tool calling, and intelligent workflows can solve practical problems.",
+    "I'm continuously expanding my technical expertise and enjoy solving real-world data challenges through scalable engineering solutions."
   ],
 
   keyHighlights: [
@@ -88,13 +90,13 @@ export const defaultPortfolioData: PortfolioData = {
       period: "07/2024 – Present",
       location: "Calicut, India",
       highlights: [
-        "Developed and maintained data extraction workflows to collect and process product information from multiple external sources.",
-        "Transformed raw data into structured, standardized datasets through data cleaning, validation, and quality checks.",
-        "Automated recurring data processing tasks and troubleshot scraping failures and pipeline issues to improve workflow reliability.",
-        "Supported database operations and backend development to improve data accessibility and application functionality.",
-        "Worked on maintaining data consistency across sources and resolving data-quality issues affecting downstream analytics.",
-        "Explored LLM-based product matching to connect natural-language product comparison requests with relevant records in scraped datasets.",
-        "Collaborated on ongoing system enhancements, debugging, and performance improvements to support reliable data processing."
+        "Developed and maintained data extraction and ETL workflows to collect, process, and standardize product information from multiple external sources.",
+        "Implemented data cleaning, transformation, validation, and quality checks to improve data consistency and reliability for downstream analytics.",
+        "Automated recurring data processing tasks and troubleshot web scraping failures and pipeline issues to improve workflow reliability.",
+        "Contributed to the development of a retail price intelligence platform for competitor price tracking, historical SKU-level pricing analysis, and cross-platform product comparison.",
+        "Developed backend components and REST APIs to support consumer and distributor dashboards, enabling data access across application components.",
+        "Supported database operations, backend debugging, and performance optimization to maintain reliable data processing and application functionality.",
+        "Investigated and resolved data quality issues across multiple sources to maintain standardized product datasets and support downstream reporting and analytics."
       ]
     }
   ],
@@ -105,14 +107,15 @@ export const defaultPortfolioData: PortfolioData = {
       title: "Ecomedes",
       type: "production",
       context: "Orbio Solutions",
-      summary: "Developed scalable batch data pipelines to extract, process, validate, and deliver product data from 25+ external web sources, supporting downstream analytics, reporting, and business intelligence.",
+      summary: "Worked on a large-scale product data processing platform for Ecomedes, developing and maintaining automated data extraction and ETL workflows to collect, process, standardize, and deliver sustainable building product information from multiple external sources. The pipelines handle diverse product specifications, certifications, technical attributes, and associated metadata, transforming raw source data into structured, validated datasets for downstream analytics, reporting, and business intelligence.",
       highlights: [
-        "Processed 6–8 million records monthly using Scrapy, PySpark, SQL, and PostgreSQL.",
-        "Developed Scrapy spiders to extract product specifications, certifications, and metadata.",
-        "Implemented PySpark workflows for data cleaning, transformation, and validation, storing raw data in PostgreSQL.",
-        "Delivered processed datasets, product certifications, and images to client AWS S3 buckets for downstream analytics and reporting.",
-        "Orchestrated reliable batch pipelines using Apache Airflow with monitoring and retry mechanisms.",
-        "Developed Power BI dashboards to analyze product trends, certification status, and key business metrics."
+        "Developed and maintained automated web scraping pipelines using Python and Scrapy to extract product information, specifications, certifications, and metadata from 25+ external sources.",
+        "Processed approximately 1–3 million records monthly, handling large volumes of heterogeneous product data.",
+        "Implemented PySpark-based data cleaning, transformation, standardization, and validation workflows to improve data consistency and reliability.",
+        "Managed structured product datasets using PostgreSQL, supporting downstream data processing and analytics requirements.",
+        "Integrated AWS S3 for storing and delivering processed datasets, product certifications, and associated images to client environments.",
+        "Supported automated batch processing workflows, troubleshooting extraction failures, data inconsistencies, and pipeline execution issues.",
+        "Prepared standardized datasets to support analytics, reporting, and sustainable product information management."
       ],
       tags: ["Scrapy", "Python", "PySpark", "SQL", "PostgreSQL", "AWS S3", "Apache Airflow", "Power BI"]
       // Note: No public repository or live demo link in resume for production client project.
@@ -138,7 +141,7 @@ export const defaultPortfolioData: PortfolioData = {
       title: "AI Trip Planner Agent",
       type: "independent",
       context: "Independent Technical Project",
-      summary: "Developed an AI-powered travel planning assistant using LangGraph and a locally hosted Qwen3:4b model through Ollama. The application uses a tool-calling workflow to generate personalized travel itineraries and integrate external APIs for destination research, weather information, currency conversion, and expense estimation.",
+      summary: "Developed an AI-powered travel planning assistant using LangGraph, LangChain, and a locally hosted Qwen3:4b model through Ollama. The application uses an agentic workflow with LLM-based reasoning and tool calling to understand user travel requirements, retrieve relevant information from external APIs, and generate personalized travel itineraries. Integrated destination research, weather information, currency conversion, and expense estimation to support informed travel planning, with a FastAPI backend and Streamlit interface.",
       highlights: [
         "Built an agentic workflow using LangGraph and LangChain to orchestrate LLM responses and tool execution.",
         "Integrated Google Places and Tavily Search for destination research, attractions, restaurants, activities, and transportation information.",

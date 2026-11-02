@@ -221,10 +221,10 @@ export const Contact: React.FC = () => {
               }`}>
                 <div className="mb-6">
                   <h3 className={`text-lg font-bold mb-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>
-                    Compose an Email
+                    Let's Connect
                   </h3>
                   <p className={`text-xs ${isLight ? 'text-slate-500' : 'text-slate-400'}`}>
-                    Pre-formats your inquiry and opens your default mail client directly to <span className={`font-mono font-medium ${isLight ? 'text-slate-800' : 'text-slate-300'}`}>{data.social.email}</span>.
+                    Have a question, project opportunity, or collaboration in mind? Send me an email, and I'll be happy to connect.
                   </p>
                 </div>
 
